@@ -1,0 +1,23 @@
+md-sidenav.md-locked-open {
+    width: 100px;
+    min-width: 100px;
+}
+
+.md-button.md-default-theme.md-fab {
+    background-color: rgb(223,223,223);   
+}
+
+.md-button.md-default-theme.md-fab:not([disabled]):hover,.md-button.md-default-theme.md-fab:not([disabled]):focus{
+    background-color: rgb(223,223,223);   
+}
+ md-card{
+     margin: auto;
+     margin-top: 80px;
+ }
+
+.md-toolbar-tools {
+    font-size: 24px;
+}
+md-input-container {
+    padding: 2px 2px 1px;
+}

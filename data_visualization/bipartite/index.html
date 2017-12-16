@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        
+        <title>BiPartite Demo</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.8.3/angular-material.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css"/>
+        
+    
+    </head>
+
+    <body>
+        <div ng-app="angularMaterial" layout="column">
+<!--
+            <md-toolbar class="md-toolbar-tools" >
+                <h2><span>GENBOREE</span></h2>
+                <span flex></span>
+                <md-content layout-align="end end" md-theme="docs-dark">
+                    <md-input-container md-no-float>
+                        
+                        <input ng-model="search" placeholder="Search"></input>
+                    </md-input-container>
+                </md-content>    
+            </md-toolbar>
+-->
+            
+            <md-card class="md-whiteframe-z4">
+            <div >
+                
+                <section layout="row" flex>    
+                <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+                           
+                    
+                        
+                        <div layout="column" layout-margin >
+                            <div id="button1" flex="5">
+                                <md-button class="md-fab" aria-label="button1">
+                                    <md-tooltip md-direction="right">Refresh</md-tooltip>
+
+                                </md-button>
+                                
+                                    
+                            </div>
+<!--
+                            <div flex>
+                                <md-button class="md-fab" aria-label="button2">
+                                    <md-tooltip md-direction="right">Get Regions</md-tooltip>
+                                </md-button>
+                                    
+                            </div>
+                            <div flex>
+                                <md-button class="md-fab" aria-label="button3">
+                                    <md-tooltip md-direction="right">Screenshot</md-tooltip>
+                                </md-button>
+                                    
+                            </div>
+-->
+                        </div>
+                    
+                    
+                </md-sidenav>
+                
+            
+                <md-content flex class="md-padding">
+                    <div ng-controller="bipartiteChartCtrl" layout="column" layout-fill layout-align = "start start">
+                        <bipartite-chart bipdt="bipdt" heatmapdt="heatmapdt">
+                            
+                        </bipartite-chart>
+                        
+                        
+                       
+                    </div>
+                </md-content>
+                </section>
+            </div>
+            </md-card>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-aria.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.8.3/angular-material.min.js"></script>
+        <script src="app.js"></script>
+  
+        
+    </body>
+
+</html>
